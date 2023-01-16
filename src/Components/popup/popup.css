@@ -1,0 +1,186 @@
+.popup_container{
+    height: 350px;
+    width:270px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition-duration: 1s ease;
+    display:inline-block;
+    position: absolute;
+    z-index: 5;
+    top:8rem;
+    animation: slidein 0.5s;
+    margin-left: 1rem ;
+
+}
+
+.popup_container2{
+    height: 350px;
+    width:270px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition-duration: 1s ease;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    top:8rem;
+    animation: slidein 0.5s;
+    margin-left: 1rem ;
+}
+
+
+
+.rating_stars{
+    border: none;
+    outline: none;
+    margin-top: 1rem;
+   
+
+}
+
+.friends_container{
+    overflow: scroll;
+    height:7.5rem;
+
+}
+
+.minimg2{
+    width:7rem;
+    height:10rem;
+    position: relative;
+    top:0rem;
+    margin-bottom: 2rem;
+
+}
+.reccomend{
+    border-radius: 10px;
+    border: whitesmoke;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    height:2rem;
+    margin-top: 0.2rem;
+    font-size: 10px;
+    width: 8rem;
+
+}
+
+.reccomend:hover{
+    user-select: none;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+  opacity: 0.9;
+}
+
+.reccomend:active{
+    transform: scale(0.9);
+  transition: 300ms;
+}
+.friends_container::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+.popup_container h3{
+    margin-top:2rem;
+    color: black    ;
+    font-weight: lighter;
+    text-align: center;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+}
+
+.popup_container2 h3{
+    margin-top:0.5rem;
+    color: black    ;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.popup_container2 p{
+    margin-top:-1rem;
+    color: rgb(192, 192, 192)    ;
+    font-weight: lighter;
+    text-align: center;
+    margin-bottom: 0rem;
+}
+
+
+.minimg{
+    width:5rem;
+    height:7rem;
+    position: relative;
+    top:2rem;
+  
+}
+
+.friends{
+    
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 1px #e3e0e0  solid;
+    margin-left:1rem;
+    margin-right: 1rem;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    background-color: white;
+    height:3rem;
+
+}
+
+.checked{
+    position: relative;
+    left: 1rem;
+    color: #34b233;
+}
+
+.hidden{
+opacity:0;
+}
+
+.hidden:hover{
+    opacity:0;
+    }
+    
+
+.friends:hover{
+background-color: whitesmoke;
+border-radius: 10px;
+box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
+
+
+}
+
+.friends img{
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    margin-left: -1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.friends h6{
+    margin-left: -1rem;
+    text-align: center;
+    position: relative;
+    bottom:-0.2rem;
+    user-select: none;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+
+@keyframes slidein{
+from{top:-10rem;}
+to{top:8rem}
+}
+
+
+

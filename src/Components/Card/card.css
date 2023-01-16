@@ -1,0 +1,257 @@
+.Card_Container{
+    height: 448px;
+    width:300px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition-duration: 1s ease;
+    display:inline-block;
+
+}
+
+.added1{
+    height: 448px;
+    width:300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    transition-duration: 1s ease;
+    display:inline-block;
+    overflow: visible;
+  
+   
+}
+
+@keyframes slide{
+    to{transform:translateX(125%) translateY(-120%) scale(0.1); opacity: 0; }
+}
+
+
+.added{
+    
+    
+    position: absolute;
+    transform: scale(0.1) ;
+    transition: 500ms;
+    
+
+}
+
+@keyframes fade{
+    from{opacity:0.8}
+    to{transform:scale(0.1); opacity:0;}
+}
+
+
+
+.watchIcon{
+    position: absolute;
+    color: white;
+    bottom:36.5rem;
+    left:52.5rem;
+    z-index: 4;
+    width:2rem;
+    height: 2rem;
+    border-radius: 80%;
+    animation: fade 1.5s;
+    opacity: 0;
+}
+
+.watchIcon2{
+    position: absolute;
+    color: white;
+    bottom:36.5rem;
+    left:52.5rem;
+    z-index: 4;
+    width:2rem;
+    height: 2rem;
+    border-radius: 80%;
+    opacity: 0.8;
+}
+
+.icon{
+    color:green;
+}
+
+.added2{
+    animation: slide;
+    animation-duration: 1s;
+}
+
+body{
+    margin:0;
+    padding: 0;
+}
+
+.outanimation{
+
+   transform: translateX(-125%) scale(0.4) ;
+   transition: 500ms;
+   opacity:0;
+
+}
+
+.between{
+    transform: translateX(115%) ;
+    opacity:0
+}
+
+.inanimation{
+  
+    transform:  translateX(0) scale(1);
+    transition: 500ms;
+    opacity: 1;
+    
+
+}
+
+
+.opened{
+    user-select: none;
+pointer-events: none;
+}
+
+.Card_Container:hover .details{
+    bottom: -100px;
+}
+
+
+
+.poster{
+    position: relative;
+    overflow: hidden;
+   
+}
+
+.poster:before{
+    content: '';
+    position:absolute;
+    bottom:-50px;
+    left:0;
+    width:100%;
+    height:100%;
+    background:  linear-gradient(0deg,#000 10%, transparent);
+    transition: 0.5s;
+    border-radius: 10px;
+    z-index: 1;
+
+}
+
+@keyframes fades {
+    from{opacity:1; filter: brightness(100%)}
+    to{opacity:0.8; filter: brightness(50%);}
+}
+
+.popopen{
+animation: fades 1s;
+opacity:0.8;
+filter: brightness(0.3);
+
+}
+
+.Card_Container:hover .poster:before{
+    bottom:0;
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.details{
+    position: absolute;
+    padding:20px;
+    height:74%;
+    width: 100%;
+    bottom:-250px;
+    left:0rem;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition:0.5s;
+    z-index:2;
+
+
+
+    }
+
+
+    .details h3{
+        color:#fff;
+        margin:0;
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .tags{
+        position: relative;
+        margin-top:5px;
+    }
+
+    .tags {
+        padding:2px 5px;
+        margin-right: 2px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-evenly ;
+    }
+
+    .tags .Fantasy{
+       background: #7206f7;
+       border-radius: 10px;
+       font-size: 10px;
+       width:3rem;
+       height: 1rem
+       
+    }
+
+  @keyframes in {
+    from{opacity: 0; bottom: 30rem; size: 0.5rem;}
+    to{oapcity:1; bottom: 20rem; size:1rem}
+  }
+
+  .gif{  
+    width:80px;
+    height:80px;
+    position: absolute;
+    z-index: 3;
+    left: 43.3rem;
+    bottom: 20rem;
+    animation-name: in;
+  animation-duration: 1s;
+
+  }
+
+  @keyframes out {
+    to{opacity:0; size:0.5rem}
+  }
+
+ 
+
+    .tags .SciFi    {
+        background: aqua;
+        border-radius: 10px;
+        font-size: 10px;
+        width:3rem;
+        height: 1rem
+
+
+     }
+
+     .tags .Romance    {
+        background: #f70661;
+        border-radius: 10px;
+        font-size: 10px;
+        width:3rem;
+        height: 1rem
+
+
+     }
+
+
+     .details p{
+        color:white;
+     }
